@@ -1,0 +1,165 @@
+@charset "UTF-8";body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+footer {
+	text-align: center;
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+  
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* 2.枠線部分（グレー） */
+.border-gray {
+   display:block;
+   border: solid 1px #CCC;
+   width: auto;
+   margin: 5px;
+}
+
+/* 3. 枠線内をクリックすると販売元に飛ぶ */
+a.book-list {
+   display: flex;
+   color: #666666;
+   padding: 10px;
+}
+
+/* 3. 枠線内をクリックすると販売元に飛ぶ */
+a.book-list :hover{
+   text-decoration:none;
+   color: #B19956;
+}
+
+/*  4.1. 商品画像の表示 */
+.book-img-block {
+   display:inline-block;
+   margin-right: 10px;
+}
+
+/*  4.2. 商品画像の表示 */
+.book-img-block img {
+  width: 80px;  /* 適宜画像サイズを調整する */
+}
+
+/* 5. 商品名、著者名、ナレーターの表示 */
+.book-text-block {
+   display:inline-block;
+}
+
+/* 5. 商品名の表示 */
+.book-text-block h1, h2, h3, h4, h5, h6 {
+   font-size: 17px;
+   font-weight: bold;
+   margin: 10px 0;
+}
+
+/* 5. 著者名、ナレーターの表示 */
+.book-text-block p {
+   margin: 0px;
+   line-height: 1.1em;
+   word-break: normal;
+}
+
+/* スニペット... */
+ul li{
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+}
+/* ... */
+
+#column ul {
+	width: calc(100 + 20px);
+	margin: 0 -10px;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: scroll;
+  	border: blue 5px solid;
+
+}
+
+#column li {
+	padding: 0 10px 20px;
+}
+
+#column li a,
+#column li a:visited {
+	text-decoration: none;
+	color: #111;
+}
+
+#column li p {
+	font-size: 90%;
+	margin-bottom: 3px;
+}
+
+#column li span {
+	font-size: 80%;
+	display: block;
+}
+
+.column02 li {
+	width: calc(50% - 20px);
+
+}
+.column03 li {
+	width: calc(33.3333% - 20px);
+}
+
+.column04 li {
+	width: calc(25% - 20px);
+}
+
+.column05 li {
+	width: calc(20% - 20px);
+}

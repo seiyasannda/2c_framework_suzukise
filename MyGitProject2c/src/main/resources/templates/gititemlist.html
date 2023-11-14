@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/style3.css}">
+    
+    <title>ホーム画面</title>
+</head>
+<body>
+	
+	<div id="column" class="column05">
+	 <ul id="product-list"></ul>
+	</div>
+	
+ <script>
+        // ul要素を取得
+        var productList = document.getElementById('product-list');
+
+        // 5回繰り返すループ
+        for (var i = 0; i < 20; i++) {
+            // li要素を作成
+            var listItem = document.createElement('li'+i);
+
+            // a要素を作成し、属性と中身を設定
+            var link = document.createElement('a');
+            link.href = '#';  // リンク先のURLを設定
+            var image = document.createElement('img');
+            image.src = '/img/noimage.jpg';  // 画像のパスを設定
+            var productName = document.createElement('p');
+            productName.textContent = '商品名';  // 商品名を設定
+            var price = document.createElement('span');
+            price.textContent = '2,600円';  // 価格を設定
+
+            // a要素の子要素としてimg要素、p要素、span要素を追加
+            link.appendChild(image);
+            link.appendChild(productName);
+            link.appendChild(price);
+
+            // li要素の子要素としてa要素を追加
+            listItem.appendChild(link);
+
+            // ul要素の子要素としてli要素を追加
+            productList.appendChild(listItem);
+        }
+</script>
+	
+
+</body>
+
+<footer>
+	
+</footer>
+</html>

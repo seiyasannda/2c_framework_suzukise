@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>システムサインイン</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>システムサインイン</h2>
+        <form th:action="@{/gitlogin}" method="post">
+            <label for="username"></label>
+            <input type="text" id="id" name="id" placeholder="ログインID" required>
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="パスワード" required>
+            <button type="submit">ログイン</button>
+        </form>
+
+        
+    </div>
+</body>
+</html>
